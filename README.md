@@ -5,8 +5,9 @@ a custom node for [MiniMates](https://github.com/kleinlee/MiniMates)
 [下载](https://pan.quark.cn/s/e031e0ff0c0b)后解压到`ComfyUI/models/AIFSH`文件夹
 
 ## 教程
-- 
-
+- [【ComfyUI节点新增MiniMates图片数字人，1键包更新】](https://www.bilibili.com/video/BV1GhmbYwEi1)
+- [一键整合包](https://b23.tv/bnjYQ81)
+  - 1键包1次充电31天免费更新，内含MiniMates，Ultralight-Digital-Human，GLM-4-Voice,MaskGCT，F5-TTS，FireRedTTS，hallo2，JoyHallo，SeedV九个AIFSH的节点，持续更新中  
 ## Example
 |avator|driving_audio|driving_video|output|
 |--|--|--|--|
