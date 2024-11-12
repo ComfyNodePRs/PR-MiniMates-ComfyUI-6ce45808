@@ -50,8 +50,8 @@ class MiniMatesNode:
         with tempfile.NamedTemporaryFile(suffix=".png",dir=tmp_dir,delete=False) as img:
             avator_np = avator.numpy()[0] * 255
             avator_np = avator_np.astype(np.uint8)
-            avator_pil = Image.fromarray(avator_np)
-            avator_pil.save(img.name)
+            avator_cv2 = cv2.cvtColor(avator_np,cv2.COLOR_BGR2RGBA)
+            cv2.imwrite(img.name,avator_cv2)
             avator_path = Path(img.name)
         
         if if_matting:
@@ -85,7 +85,7 @@ class MiniMatesNode:
             cmd = f"""{py} {py_path} {avator_path} {audio_path} {output_path}"""
         print(cmd)
         os.system(cmd)
-        shutil.rmtree(template_path)
+        shutil.rmtree(tmp_dir)
         return (output_path, )
         
 

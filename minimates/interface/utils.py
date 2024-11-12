@@ -180,7 +180,7 @@ def audio_interface(audio_path):
     for frame_index in range(frame_num):
         # pts = np.dot(bs_array[frame_index, :6], PcaModel.components_[:6]) + PcaModel.mean_
         pts = np.dot(bs_array[frame_index, :6], PcaModel.components_[:6]) * 0.7
-        print(frame_index, pts.shape)
+        # print(frame_index, pts.shape)
         pts = pts.reshape(-1, 3)
         pts[:, 0] *= 0.7
         output[frame_index] = pts
