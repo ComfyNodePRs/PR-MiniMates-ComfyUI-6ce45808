@@ -1,0 +1,15 @@
+[project]
+name = "minimates-comfyui"
+description = "a custom node for [a/MiniMates](https://github.com/kleinlee/MiniMates)"
+version = "1.0.0"
+license = {file = "LICENSE"}
+dependencies = ["kaldi_native_fbank", "mediapipe", "onnxruntime", "librosa", "glfw", "PyOpenGL", "scikit-learn"]
+
+[project.urls]
+Repository = "https://github.com/AIFSH/MiniMates-ComfyUI"
+#  Used by Comfy Registry https://comfyregistry.org
+
+[tool.comfy]
+PublisherId = ""
+DisplayName = "MiniMates-ComfyUI"
+Icon = ""
